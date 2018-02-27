@@ -59,4 +59,7 @@ git commit -m "delete text.txt"
 还有一点就是如果版本库已经不包含这个文件了，有后悔误删了，这时就可以执行版本回退类似
 git reset --hard head^
 ====================================================================
-远程仓库：
+添加远程库：
+要关联一个远程库，使用命令git remote add origin git@github.com:fiona22/learn.git；
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
